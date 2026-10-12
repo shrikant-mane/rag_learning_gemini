@@ -1,0 +1,19 @@
+# Python and Artificial Intelligence
+
+Python is a popular programming language used in artificial intelligence, data science, and automation. Its simple syntax and extensive ecosystem make it suitable for beginners and experienced developers.
+
+## Machine Learning
+
+Machine learning is a branch of artificial intelligence that allows computers to learn patterns from data. Supervised learning uses labeled examples, while unsupervised learning discovers patterns in unlabeled data.
+
+## Retrieval-Augmented Generation
+
+Retrieval-Augmented Generation, also known as RAG, combines information retrieval with a generative language model. A RAG system first retrieves relevant passages from a knowledge base and then provides those passages to a language model to generate a grounded answer.
+
+## Document Embeddings
+
+Embeddings represent text as numerical vectors. Texts with related meanings often have similar vector representations. Semantic search uses these vectors to identify relevant documents even when the query and document use different words.
+
+## Employee Leave Policy
+
+Employees are entitled to annual paid leave according to company policy. Employees should consult the human resources department for details about eligibility, leave balances, and approval procedures.
