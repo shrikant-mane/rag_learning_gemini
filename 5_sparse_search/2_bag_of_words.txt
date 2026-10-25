@@ -1,0 +1,35 @@
+Bag of Words (BoW) is a technique that converts text into numerical vectors based on 
+how frequently words appear in a document.
+
+BoW ignores the order of words and focuses on their occurrences.
+
+doc1 = "python is easy python"
+doc2 = "java is easy"
+
+vocabulary = ["python", "is", "easy", "java"]
+
+hen count the occurrences of each word.
+Document	python	is	easy	java
+doc1	    2	    1	1	    0
+doc2	    0	    1	1	    1
+
+Notice that "python" has a value of 2 because it appears twice in Document 1.
+
+
+Feature	            One-Hot Encoding	    Bag of Words
+Represents	        Individual word	        Entire document
+Vector values	    0 or 1	                Word counts
+Word frequency	    No	                    Yes
+Word order	        Not represented	        Ignored
+Sparse representation	Yes	                Usually yes
+
+
+limitations
+
+    - No semantic understanding: "car" and "automobile" are different words.
+    - No word order: "dog bites man" and "man bites dog" produce identical vectors.
+    - Large vocabulary: Thousands of unique words can create very high-dimensional vectors.
+    - No importance weighting: Common words such as "the" and "is" may contribute to scores even though they are less informative.
+    - Frequency bias: Documents repeating query words can receive high scores.
+    
+These limitations motivate techniques such as TF-IDF and BM25.

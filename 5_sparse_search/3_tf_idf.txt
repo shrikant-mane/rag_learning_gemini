@@ -1,0 +1,37 @@
+TF-IDF stands for Term Frequency–Inverse Document Frequency.
+
+TF-IDF is a numerical technique used to measure how important a word is to a document relative to a 
+collection of documents.
+
+TF-IDF assigns greater importance to words that are frequent in a particular document but relatively 
+rare across the collection.
+
+TF (Term Frequency)
+    How frequently does the word occur in this document?
+
+
+IDF (Inverse Document Frequency)
+    How rare is the word across all documents?
+
+
+TF-IDF(t,d)=TF(t,d) X IDF(t)
+
+
+==============================
+Term Frequency (TF)
+
+TF(t,d) = (Count of term t in document d)/ (Total terms in documrnt d)
+
+
+document = "python python aws java"
+TF('python') = 2/4 => 0.5
+TF('aws') = 1/4 => 0.25
+
+=============================
+
+Inverse Document Frequency (IDF)
+IDF(t) = ln[(N+1) / (DF(t)+1)] + 1
+
+N= total number of documents.
+DF(t) = number of documents containing the term.
+ln = natural logarithm.

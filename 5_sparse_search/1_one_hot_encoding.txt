@@ -1,0 +1,37 @@
+OHE (One-Hot Encoding)
+
+OHE stands for One-Hot Encoding. It is a technique for representing words or categories as numerical vectors 
+containing only 0 and 1.
+
+vocabulary = ["python", "java", "aws"]
+
+Word	python	java	aws
+python	1	    0	    0
+java	0	    1	    0
+aws	    0	    0	    1
+
+
+Each word has exactly one active position (1). All other positions are zero
+
+
+Ex.
+doc1 = "python aws"
+doc2 = "java aws"
+
+query = "python"
+
+Text	    python	java	aws
+Document 1	  1	    0	    1
+Document 2	  0	    1	    1
+Query	      1	    0	    0
+
+Now calculate the dot product between the query and each document.
+
+Query × Document 1
+(1 X 1) + (0 X 0) + (0 X 1) = 1
+
+Query × Document 2
+(1 X 0) + (0 X 0) + (0 X 1) = 0
+
+Document 1 receives a higher score because it contains "python".
+
